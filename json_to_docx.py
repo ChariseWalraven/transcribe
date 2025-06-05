@@ -44,9 +44,3 @@ for utterance in o_obj:
     p.add_run(utterance['text'])
 
 document.save(dst_filename)
-
-
-# file_content = '\n'.join([f"{o['speaker']}: {o['text']}" for o in file_content])
-
-# with open(dst_filename, 'w+') as txt_file:
-#     txt_file.write(file_content)

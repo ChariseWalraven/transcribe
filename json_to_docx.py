@@ -1,7 +1,5 @@
 import json
 
-from lxml.html import document_fromstring
-
 from docx import Document
 
 # set origin file

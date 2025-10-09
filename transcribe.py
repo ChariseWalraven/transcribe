@@ -12,13 +12,13 @@ api_key = os.environ.get('ASSEMBLY_AI_API_KEY')
 
 aai.settings.api_key = api_key
 
-audio_file = "audio/spraak_1.m4a"
+audio_file = "./audio/ageeth_hoofd_en_deelvragen.m4a"
 
 config = aai.TranscriptionConfig(
   speech_model=aai.SpeechModel.universal,
   speaker_labels=True,
   language_code='nl',
-  speakers_expected=3
+  speakers_expected=6,
 )
 
 transcript = aai.Transcriber(config=config).transcribe(audio_file)
